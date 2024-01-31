@@ -9,13 +9,6 @@ import com.example.mvvm_coroutines.ui.base.BaseFragment
 import java.lang.ref.WeakReference
 
 class SplashFragment : BaseFragment<FragmentSplashBinding, SplashViewModel>() {
-    companion object {
-        const val TIMER_DURATION = 5000L
-        const val TIMER_COUNT_DOWN = 1000L
-    }
-
-    private var countIndex = 0
-    private var countDownTimer: WeakReference<CountDownTimer>? = null
 
     override fun layoutRes(): Int = R.layout.fragment_splash
 
